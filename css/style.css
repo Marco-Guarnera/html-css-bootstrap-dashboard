@@ -1,4 +1,11 @@
-:root {
-    --primary-color: #000;
-    --secondary-color: #FFF;
+/* Utilities */
+[class^="col"] {
+    border: 2px dashed orangered;
+}
+
+/* Layout */
+#main-header {
+    min-height: 100px;
+    background-color: #212529;
+    color: #FFF;
 }
