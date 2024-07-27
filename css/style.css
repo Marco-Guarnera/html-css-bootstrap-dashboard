@@ -1,11 +1,23 @@
 /* Utilities */
-[class^="col"] {
+main [class^="col"] {
     border: 2px dashed orangered;
 }
 
 /* Layout */
+
+/* Main Header */
 #main-header {
-    min-height: 100px;
     background-color: #212529;
-    color: #FFF;
+}
+
+#main-header img {
+    width: 50px;
+}
+
+#main-header .form-control {
+    background-color: #FFF;
+}
+
+#main-header ::placeholder {
+    color: #777;
 }
