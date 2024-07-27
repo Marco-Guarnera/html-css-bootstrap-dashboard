@@ -1,5 +1,5 @@
 /* Utilities */
-main [class^="col"] {
+main [class*="col-lg-3"] {
     border: 2px dashed orangered;
 }
 
@@ -20,4 +20,16 @@ main [class^="col"] {
 
 #main-header ::placeholder {
     color: #777;
+}
+
+/* Main */
+
+/* Table */
+table .text-bg-warning {
+    color: #FFF !important;
+}
+
+th:last-child,
+td:last-child {
+    text-align: center;
 }
