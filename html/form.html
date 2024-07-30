@@ -46,6 +46,64 @@
         </nav>
     </header>
     <!-- Main -->
-    <main></main>
+    <main>
+        <!-- Form -->
+        <form action="#">
+            <div class="container">
+                <div class="row row-cols-1">
+                    <div class="col mb-3">
+                        <h3>Nuovo Libro</h3>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="first-name" class="form-label">Nome Autore</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col-6">
+                        <label for="last-name" class="form-label">Cognome Autore</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                    <div class="col mb-3">
+                        <label for="title" class="form-label">Titolo</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Inserisci il titolo del libro" aria-describedby="title-help">
+                        <div id="title-help" class="form-text">Titolo versione italiana</div>
+                    </div>
+                    <div class="col col-md-4 mb-3">
+                        <label for="type" class="form-label">Genere</label>
+                        <select class="form-select" id="type" name="type" aria-label="type">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Fantasy</option>
+                            <option value="2">Horror</option>
+                            <option value="3">Thriller</option>
+                        </select>
+                    </div>
+                    <div class="col col-md-4 mb-3">
+                        <label for="year" class="form-label">Anno di Pubblicazione</label>
+                        <input type="number" min="1970" max="2024" class="form-control" id="year" name="year" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col col-md-4 mb-3">
+                        <label for="code" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" id="code" name="code" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                    <div class="col">
+                        <hr>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="note" class="form-label">Note</label>
+                        <textarea class="form-control" id="note" name="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="form-check">
+                            <label class="form-check-label">Disponibile anche in digitale
+                                <input class="form-check-input" type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
